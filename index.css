@@ -1,0 +1,123 @@
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #acd2f3;
+    color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    grid-column: span 2;
+    text-align: center;
+    background-color: #035394;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+section {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #106db9;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #1073c4;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.progress-bar-container {
+    margin: 10px 0;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background: #095da2;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        grid-column: span 1;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+    .contact,.contact li{
+        display : block;
+       
+    }
+}
+
+.contact,.contact li{
+    display : flex;
+    margin-right: 60px;
+}
+.contact li i{
+    font-size: 20px;
+    color :#1386e4;
+}
+.projects{
+    text-decoration: none;
+    color: #333;
+}
+
+.projects i{
+  color: rgb(67, 193, 251);
+}
